@@ -1,0 +1,262 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+header. heading{
+    font-size: 50px;
+    color: gray;
+    padding: 15px;
+    text-align: center;
+}
+ *::selection{
+     
+     color:orange;
+ }
+
+ html{
+     font-size: 50%;
+     overflow-x:hidden;
+ }
+
+ section{
+     padding: 0 5%;
+     padding-top: 150px;
+ }
+
+ .btn{
+     font-size: 20px;
+     padding: 10px 1px;
+     color: black;
+     margin-top: 15px;
+     cursor: pointer;
+ }
+
+ .btn hover{
+     background:indianred;
+ }
+
+ header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+     background:springgreen;
+     box-shadow: 0 .15px .45px. rgba(0,0,0,.3);
+     width:100%;
+ }
+
+ header .heading{
+     font-size: 50px;
+     color:purple;
+     padding: 15px;
+     text-align: center;
+ }
+
+ 
+ header .navbar ul{
+     display: flex;
+     align-items:center;
+     justify-content: center;
+     
+ }
+
+ header .navbar ul li{
+     margin: 0 40px;
+ }
+
+ header .navbar ul li a{
+     font-size: 30px;
+     color: black;
+ }
+
+ header .navbar ul li a:hover{
+     color:greenyellow;
+ }
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:url(https://image.shutterstock.com/image-vector/global-structure-networking-data-connection-260nw-1177915792.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap:wrap;
+}
+
+.home .image{
+    flex: 1 1 200px;
+}
+
+.home .image img{
+    width:100%;
+}
+
+.home .content{
+    flex: 1 1 600px;
+}
+
+.home .content h1{
+    font-size: 70px;
+    color:royalblue
+}
+
+.home .content p{
+    font-size: 25px;
+    color:black;
+    padding: 15px 0;
+}
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    padding-bottom: 30px;
+}
+
+.about .image{
+    flex: 1 1 300px;
+}
+
+.about .image img{
+    width:400px;
+}
+
+.about .content{
+    flex: 1 1 600px;
+}
+
+.about .content h1{
+    font-size: 70px;
+    color:royalblue
+}
+
+.about .content p{
+    font-size: 25px;
+    color:black;
+    padding: 15px 0;
+}
+
+
+.service{
+    min-height: 100vh;
+    background:turquoise;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.service .box-container .box{
+    background: white;
+    margin: 30px;
+    padding: 15px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 .45px black;
+}
+
+
+.service .box-container .box h3{
+    font-size:30px;
+    color:#444;
+}
+
+.service .box-container .box p{
+    font-size: 20px;
+    color:black;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+ 
+ /* media queries */
+ @media (max-width:700px){
+    html{
+        font-size: 55%;
+       }
+   
+   .home .content{
+       text-align: center;
+   }
+
+   .home .content h1{
+       font-size: 50px;
+   }
+   
+
+   .about .content h1{
+       font-size: 50px;
+   }
+
+
+   @media (max-width:500px){
+    html{
+            font-size: 50%;
+        }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    header #menu{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: 90px;
+        right:0;
+        height: 100%;
+        width: 100%;
+        border-top: .30px solid orange;
+    }
+    header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        background: black;
+        padding-bottom: 50px;
+    }
+    header .navbar ul li{
+        text-align: center;
+        width:100%;
+        margin: 15px 0;
+    }
+    header .navbar ul li a{
+        font-size:50px;
+        color:gray;
+        display: block;
+    }
+    header .navbar ul li a:hover{
+        color:var(blue);
+    }
+ 
+ 
+    header .navbar.nav-toggle{
+        right: 0;
+    }
+ 
+    section{
+        padding-top:70px;
+    }
+ }
